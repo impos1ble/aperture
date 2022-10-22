@@ -128,17 +128,3 @@ h1{
     text-align: center;
     color: #C0C0C0;
 }
-
-form{
-    padding: 150px;
-}
-.form-container{
-    max-width: 546px; 
-}
-.first-name{
-    display: block;
-    width: 100%;
-}
-textarea{
-    height: 150px; resize: none;
-}
