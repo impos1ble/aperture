@@ -228,7 +228,7 @@ background-color: #000000;
 .clients-container{
     max-width: 1200px;
     margin: auto; 
-    padding: 120px 120px 100px;
+    padding: 120px 0px 100px;
 }
 .clients h3{
     font-family: 'poppinsregular';
@@ -255,6 +255,13 @@ background-color: #000000;
     display: flex;
     justify-content: space-around; 
     align-items: center;
+}
+.clients a{
+    max-width: 128px;
+}
+.clients img{
+    width: 100%;
+    display: block;
 }
 
 .star{
@@ -303,7 +310,7 @@ background-color: #000000;
     padding-bottom: 22px;
 }
 .get{
-    padding: 9px 10px 13px 4px;
+    padding: 5px 10px 5px 4px;
     border-radius: 14px;
     background: #FFFFFF;
     text-decoration:none;
@@ -313,8 +320,9 @@ background-color: #000000;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    text-align: center;
     letter-spacing: 0.4px;
+    display: inline-flex;
+    align-items: center;
 }
 .get:before{
     content: "";
@@ -323,6 +331,5 @@ background-color: #000000;
     width: 32px;
     height: 32px;
     margin-right: 6px;
-    margin-bottom: -13px;
     border-radius: 45%;
 }
