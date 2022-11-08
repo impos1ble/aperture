@@ -1,0 +1,17 @@
+@media screen and (max-width: 360px) {
+    
+}
+@media screen and (max-width: 428px) {
+    .main-section{
+        
+    }
+}
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width:850px) {
+    .navbar{
+    margin-right: 7px;
+    font-size: 7px;
+    }
+}
