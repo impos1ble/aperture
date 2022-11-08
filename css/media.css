@@ -1,17 +1,174 @@
-@media screen and (max-width: 360px) {
-    
-}
-@media screen and (max-width: 428px) {
-    .main-section{
-        
+@media screen and (max-width: 1215px) {
+    .header-container{
+        margin: 0px 10px;
     }
 }
-@media screen and (max-width: 768px) {
-    
+@media screen and (max-width: 849px) {
+    .header-container{
+        margin: 0px 5px;
+    }
+    .navbar-business, .navbar-featured, .navbar-gear, .navbar-contact, .navbar-get{
+    margin-left: 10px;
+    font-size: 10px;
+    }
+    .main-p{
+        font-size: 9px;
+        margin: 0px 5px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .subtitle{
+        font-size: 10px;
+    }
+    .fixed-location{
+        right: 30px;
+        bottom: 30px;
+    }
+    .fixed-location li{
+        margin-left: 8px;
+        font-size: 8px;
+    }
+    .fixed-location li:before{
+        margin-right: 3px;
+    }
+    .clients h3{
+        font-size: 25px;
+    }
+    .clients p{
+        font-size: 15px;
+    }
+    .clients a{
+        max-width: 90px;
+    }
+    .need-help h3{
+        font-size: 25px;
+    }
+    .need-help p{
+        font-size: 15px;
+    }
+    .get{
+        font-size: 12px;
+    }
 }
-@media screen and (max-width:850px) {
+@media screen and (max-width: 553px) {
+    .main-section{
+        height: calc(75vh - 83px);
+    }
+    .navbar-business, .navbar-featured, .navbar-gear, .navbar-contact, .navbar-get{
+        margin-left: 5px;
+        font-size: 7px;
+    }
+    .main-section h1{
+        padding-bottom: 5px;
+    }
+    .main-p{
+        font-size: 7px;
+    }
+    .fixed-location{
+        right: 20px;
+        bottom: 20px;
+    }
+    .fixed-location li{
+        margin-left: 8px;
+        font-size: 8px;
+    }
+    .fixed-location li:before{
+        margin-right: 3px;
+    }
+    .sunset .sub-container, .monstera .sub-container, .star .sub-container{
+        margin-right: 30px;
+        margin: auto;
+        text-align: center;
+    }
+    .sunset{
+        min-height: 400px;
+    }
+    .monstera{
+        min-height: 400px;
+    }
+    .star{
+        min-height: 400px;
+    }
+    .sub-container h4,.sub-container p{
+        font-size: 10px;
+    }
+    .clients h3{
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+    .clients p{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    .clients a{
+        max-width: 70px;
+    }
+    .container-need{
+        padding: 60px 0px 50px;
+    }
+    .need-help h3{
+        font-size: 15px;
+        padding-bottom: 8px;
+    }
+    .need-help p{
+        font-size: 10px;
+        padding-bottom: 11px;
+    }
+    .get{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 431px) {
+    .main-section{
+        height: calc(75vh - 83px);
+    }
+    .header-container img{
+        margin-left: 20px;
+    }
     .navbar{
-    margin-right: 7px;
-    font-size: 7px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .navbar-business, .navbar-featured, .navbar-gear, .navbar-contact, .navbar-get{
+        margin-left: 10px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .subtitle{
+        font-size: 8px;
+    }
+    .sunset .sub-container{
+        margin: auto;
+        text-align: center;
+    }
+    .clients-container{
+        padding: 30px 0 20px;
+    }
+    .icons-clients{
+       flex-direction: column;
+    }
+    .clients a{
+        max-width: 100px;
+        margin-bottom: 30px;
+    }
+    .need-help h3{
+        font-size: 12px;
+        padding-bottom: 5px;
+        line-height: 21px;
+    }
+    .need-help p{
+        font-size: 8px;
+        padding-bottom: 6px;
+        line-height: 15px;
+    }
+    .get{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .main-section{
+        height: calc(90vh - 40px);
     }
 }
