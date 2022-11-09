@@ -75,6 +75,24 @@
     }
     .fixed-location li:before{
         margin-right: 3px;
+        height: 10px;
+        width: 10px;
+        background-size: cover;
+    }
+    .fixed-location li:nth-child(2):before{
+        height: 10px;
+        width: 10px;
+        background-size: cover;
+    }
+    .fixed-location li:nth-child(3):before{
+        height: 10px;
+        width: 20px;
+        background-size: cover;
+    }
+    .fixed-location li:nth-child(4):before{
+        height: 13px;
+        width: 8px;
+        background-size: cover;
     }
     .sunset .sub-container, .monstera .sub-container, .star .sub-container{
         margin-right: 30px;
