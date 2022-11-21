@@ -12,19 +12,28 @@
 * {
     padding: 0;
     margin: 0;
+    border: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 body{
     padding-top: 83px;
+    background-color: #181818;
+}
+a {
+    text-decoration: none;
 }
 
-.header{
+header{
     padding: 24px 0;
     background: #181818;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 9;
+}
+.header-container img{
+    display: block;
 }
 .header-container{
     max-width: 1200px;
@@ -77,7 +86,7 @@ body{
     text-decoration: none;
     color: #FFFFFF;
 }
-.navbar-get{
+.navbar-get {
     margin-left: 31px;
     font-family: 'poppinsregular';
     font-style: normal;
@@ -253,6 +262,7 @@ background-color: #000000;
 .icons-clients{
     margin: auto; 
     display: flex;
+    max-width: 1000px;
     justify-content: space-around; 
     align-items: center;
 }
@@ -346,10 +356,10 @@ background-color: #000000;
     font-family: "Font Awesome 6 Free";
     content: "\f053";
     display: inline-block;
-    font-size: 70px;
+    font-size: 40px;
     color: #FFFFFF;
     position: absolute;
-    left: -47px;
+    left: -20px;
     top: 10px;
 }
 .owl-nav .owl-next::before{
@@ -357,15 +367,17 @@ background-color: #000000;
     font-family: "Font Awesome 6 Free";
     content: "\f054";
     display: inline-block;
-    font-size: 70px;
+    font-size: 40px;
     color: #FFFFFF;
     position: absolute;
-    right: -47px;
+    right: -20px;
     top: 10px;
+}
+.owl-nav .owl-prev:hover::before, .owl-nav .owl-next:hover::before{
+    color: rgba(255, 255, 255, 0.4);
 }
 .owl-dots{
     text-align: center;
-
 }
 .owl-dots .owl-dot span{
     display: inline-block;
@@ -414,7 +426,6 @@ background-color: #000000;
     line-height: 12px;
     color: #FFFFFF;
 }
-
 .faq .ui-accordion .ui-accordion-header{
     background: #FFFFFF;
     border: 1px solid #E3E8EF;
@@ -436,8 +447,8 @@ background-color: #000000;
 .ui-accordion .ui-accordion-content{
     margin-bottom: 16px;
     border-radius: 0 0 8px 8px;
+    padding: 8px 8px;
 }
-
 .faq .ui-accordion .ui-icon{
     background-image: none;
     background-position: 0;
@@ -459,3 +470,123 @@ background-color: #000000;
 .faq .ui-accordion .ui-accordion-header.ui-state-active .ui-icon::before{
     transform: rotate(360deg);
 }
+.ui-accordion-content .ui-accordion-content-active{
+    height: auto;
+}
+/* ---Main Components ---- */
+.cd-header {
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  transition: transform 0.5s;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+  .cd-header:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .cd-header.nav-is-visible {
+    -webkit-transform: translateY(80px);
+    -moz-transform: translateY(80px);
+    -ms-transform: translateY(80px);
+    -o-transform: translateY(80px);
+    transform: translateY(80px); }
+  @media only screen and (min-width: 768px) {
+    .cd-header.nav-is-visible {
+      -webkit-transform: translateY(170px);
+      -moz-transform: translateY(170px);
+      -ms-transform: translateY(170px);
+      -o-transform: translateY(170px);
+      transform: translateY(170px); } }
+  @media only screen and (min-width: 768px) {
+    .cd-3d-nav a {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      /* truncate text with ellipsis if too long */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+      .cd-3d-nav a::before {
+        top: 4.4em;
+        left: 50%;
+        right: auto;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%); } }
+        .cd-3d-nav-trigger {
+          position: relative;
+          float: right;
+          height: 45px;
+          width: 45px;
+          /* replace text with background image */
+          overflow: hidden;
+          text-indent: 100%;
+          white-space: nowrap;
+          color: transparent;
+          display: none;
+          }
+.cd-marker {
+  /* line at the bottom of nav selected item */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 20%;
+  background-color: currentColor;
+  -webkit-transform-origin: center bottom;
+  -moz-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  -o-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-transform: translateZ(0) rotateX(90deg);
+  -moz-transform: translateZ(0) rotateX(90deg);
+  -ms-transform: translateZ(0) rotateX(90deg);
+  -o-transform: translateZ(0) rotateX(90deg);
+  transform: translateZ(0) rotateX(90deg);
+  -webkit-transition: -webkit-transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s;
+  -moz-transition: -moz-transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s;
+  transition: transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s; }
+  .cd-marker::before {
+    /* triangle at the bottom of nav selected item */
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 0;
+    width: 0;
+    border: 10px solid transparent;
+    border-bottom-color: inherit; }
+  .nav-is-visible .cd-marker {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0); }
+/* these are the colors of the markers - line + arrow */
+.color-1 {
+  color: #9a57bd; }
+
+.color-2 {
+  color: #c96aa4; }
+
+.color-3 {
+  color: #d6915e; }
+
+.color-4 {
+  color: #5397c7; }
+
+.color-5 {
+  color: #77cd91; }
