@@ -1,0 +1,52 @@
+.star {
+    background-image: url(../img/bg-star.jpg);
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    @include max-screen(553px) {
+        min-height: 400px;
+    }
+
+    .sub-container {
+        max-width: 254px;
+        margin-right: 106px;
+
+        @include max-screen(553px) {
+            margin-right: 30px;
+            margin: auto;
+            text-align: center;
+        }
+
+        h4 {
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
+            @include max-screen(553px) {
+                font-size: 10px;
+            }
+        }
+
+        p {
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #C0C0C0;
+
+            @include max-screen(553px) {
+                font-size: 10px;
+            }
+        }
+    }
+}

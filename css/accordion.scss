@@ -1,0 +1,159 @@
+.faq {
+    background-color: #181818;
+    padding: 70px 0;
+
+    .text {
+        max-width: 500px;
+        padding-right: 50px;
+
+        @include max-screen(849px) {
+            padding-right: 30px;
+        }
+
+        @include max-screen(553px) {
+            padding-right: 15px;
+        }
+
+        @include max-screen(431px) {
+            padding-right: 5px;
+        }
+
+        h3 {
+            font-family: $main_font;
+            font-size: 41px;
+            font-weight: 400;
+            line-height: 50px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #C0C0C0;
+            margin-bottom: 50px;
+
+            @include max-screen(849px) {
+                font-size: 30px;
+                line-height: 30px;
+            }
+
+            @include max-screen(553px) {
+                font-size: 25px;
+                line-height: 25px;
+            }
+
+            @include max-screen(431px) {
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }
+
+        p {
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 12px;
+            color: #FFFFFF;
+
+            @include max-screen(553px) {
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    .accordion {
+        max-width: 700px;
+    }
+
+    .ui-accordion {
+        .ui-accordion-header {
+            background: #FFFFFF;
+            border: 1px solid #E3E8EF;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            padding: 23px 25px;
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color: #202939;
+            margin-bottom: 16px;
+        }
+
+        .ui-accordion-header.ui-state-active {
+            margin-bottom: 0px;
+            border-radius: 8px 8px 0 0;
+
+            .ui-icon {
+                &:before {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+
+        .ui-accordion-content {
+            margin-bottom: 16px;
+            border-radius: 0 0 8px 8px;
+            padding: 8px 8px;
+
+            .ui-accordion-content-active {
+                height: auto;
+            }
+        }
+
+        .ui-icon {
+            background-image: none;
+            background-position: 0;
+            width: 32px;
+            height: 48px;
+            text-indent: 0px;
+            position: absolute;
+            right: 25px;
+            top: 26px;
+
+            @include max-screen(320px) {
+                width: 25px;
+                height: 35px;
+                right: 10px;
+                top: 26px;
+            }
+
+            &:before {
+                font-weight: 900;
+                font-family: "Font Awesome 6 Free";
+                content: "\2b";
+                font-size: 32px;
+                display: inline-block;
+                transition: 0.5s;
+
+                @include max-screen(320px) {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+.faq-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+
+    @include max-screen(1215px) {
+        margin: 0px 10px;
+    }
+
+    @include max-screen(849px) {
+        margin: 0px 5px;
+    }
+
+    @include max-screen(553px) {
+        margin: 5px 15px;
+        padding: 0 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    @include max-screen(431px) {
+        margin: 0px 5px;
+    }
+}

@@ -1,0 +1,145 @@
+.what-we-do {
+    background-color: $main_color;
+    padding: 112px 0 100px;
+
+    @include max-screen(553px) {
+        padding: 40px 0 20px;
+    }
+
+    h3 {
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 42px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+
+        @include max-screen(849px) {
+            font-size: 25px;
+        }
+
+        @include max-screen(553px) {
+            font-size: 20px;
+        }
+    }
+
+    h4 {
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 30px;
+        text-align: center;
+        color: #C0C0C0;
+        margin-bottom: 42px;
+
+        @include max-screen(849px) {
+            font-size: 15px;
+        }
+
+        @include max-screen(553px) {
+            font-size: 12px;
+        }
+    }
+
+    article {
+        max-width: 576px;
+        position: relative;
+        margin-bottom: 16px;
+
+        @include max-screen(1170px) {
+            max-width: 550px;
+            padding: 0 10px;
+        }
+
+        @include max-screen(1110px) {
+            max-width: 500px;
+        }
+
+        @include max-screen(1015px) {
+            max-width: 450px;
+        }
+
+        @include max-screen(910px) {
+            min-width: 100%;
+        }
+
+        @include max-screen(553px) {
+            margin-bottom: 6px;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        .description {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            padding-right: 30px;
+
+            h4 {
+                font-family: $main_font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin-bottom: 15px;
+                text-align: left;
+
+                @include max-screen(849px) {
+                    font-size: 12px;
+                    line-height: 12px;
+                }
+
+                @include max-screen(553px) {
+                    font-size: 10px;
+                    line-height: 10px;
+                    margin-bottom: 7px;
+                }
+            }
+
+            p {
+                font-family: $main_font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #C0C0C0;
+                margin-bottom: 15px;
+
+                @include max-screen(849px) {
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+
+                @include max-screen(553px) {
+                    font-size: 10px;
+                    line-height: 12px;
+                    margin-bottom: 7px;
+                }
+            }
+        }
+    }
+}
+
+.what-container {
+    max-width: 1168px;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}

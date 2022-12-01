@@ -1,0 +1,101 @@
+.clients {
+    background-color: $main_color;
+
+    h3 {
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 42px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+
+        @include max-screen(849px) {
+            font-size: 25px;
+        }
+
+        @include max-screen(553px) {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        @include max-screen(431px) {
+            font-size: 12px;
+            padding-bottom: 5px;
+            line-height: 21px;
+        }
+    }
+
+    p {
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #C0C0C0;
+        margin-bottom: 42px;
+
+        @include max-screen(849px) {
+            font-size: 15px;
+        }
+
+        @include max-screen(553px) {
+            font-size: 10px;
+            margin-bottom: 20px;
+        }
+
+        @include max-screen(431px) {
+            font-size: 8px;
+            padding-bottom: 6px;
+            line-height: 15px;
+        }
+    }
+
+    a {
+        max-width: 128px;
+        display: inline-block;
+
+        @include max-screen(849px) {
+            max-width: 90px;
+        }
+
+        @include max-screen(553px) {
+            max-width: 70px;
+        }
+
+        @include max-screen(431px) {
+            max-width: 100px;
+            margin-bottom: 30px;
+        }
+
+    }
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.clients-container {
+    max-width: 1168px;
+    margin: auto;
+    padding: 120px 0px 100px;
+
+    @include max-screen(431px) {
+        padding: 30px 0 20px;
+    }
+}
+
+.icons-clients {
+    margin: auto;
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-around;
+    align-items: center;
+
+    @include max-screen(431px) {
+        flex-direction: column;
+    }
+}

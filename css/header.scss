@@ -1,0 +1,172 @@
+header {
+    padding: 24px 0;
+    background: #181818;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        display: block;
+
+        @include max-screen(431px) {
+            margin-left: 20px;
+        }
+    }
+
+    @include max-screen(1215px) {
+        margin: 0px 10px;
+    }
+
+    @include max-screen(849px) {
+        margin: 0px 5px;
+    }
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+
+    @include max-screen(431px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.navbar-business {
+    margin-left: 34px;
+    font-style: normal;
+    font-family: $main_font;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+
+    @include max-screen(849px) {
+        margin-left: 8px;
+        font-size: 10px;
+    }
+
+    @include max-screen(553px) {
+        margin-left: 5px;
+        font-size: 7px;
+    }
+
+    @include max-screen(431px) {
+        margin-left: 10px;
+    }
+}
+
+.navbar-featured {
+    margin-left: 56px;
+    font-style: normal;
+    font-family: $main_font;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+
+    @include max-screen(849px) {
+        margin-left: 8px;
+        font-size: 10px;
+    }
+
+    @include max-screen(553px) {
+        margin-left: 5px;
+        font-size: 7px;
+    }
+
+    @include max-screen(431px) {
+        margin-left: 10px;
+    }
+}
+
+.navbar-gear {
+    margin-left: 32px;
+    font-style: normal;
+    font-family: $main_font;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+
+    @include max-screen(849px) {
+        margin-left: 8px;
+        font-size: 10px;
+    }
+
+    @include max-screen(553px) {
+        margin-left: 5px;
+        font-size: 7px;
+    }
+
+    @include max-screen(431px) {
+        margin-left: 10px;
+    }
+}
+
+.navbar-contact {
+    margin-left: 32px;
+    font-style: normal;
+    font-family: $main_font;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+
+    @include max-screen(849px) {
+        margin-left: 8px;
+        font-size: 10px;
+    }
+
+    @include max-screen(553px) {
+        margin-left: 5px;
+        font-size: 7px;
+    }
+
+    @include max-screen(431px) {
+        margin-left: 10px;
+    }
+}
+
+.navbar-get {
+    margin-left: 31px;
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: $main_color;
+    text-decoration: none;
+    padding: 9px 20px 13px;
+    border-radius: 14px;
+    background: #FFFFFF;
+
+    @include max-screen(849px) {
+        margin-left: 8px;
+        font-size: 10px;
+    }
+
+    @include max-screen(553px) {
+        margin-left: 5px;
+        font-size: 7px;
+    }
+
+    @include max-screen(431px) {
+        margin-left: 10px;
+    }
+}

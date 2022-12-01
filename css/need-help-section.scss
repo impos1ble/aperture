@@ -1,0 +1,94 @@
+.need-help {
+    background: $main_color;
+    display: flex;
+    margin: auto;
+    text-align: center;
+
+    h3 {
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 42px;
+        text-align: center;
+        color: #FFFFFF;
+        padding-bottom: 15px;
+
+        @include max-screen(849px) {
+            font-size: 25px;
+        }
+
+        @include max-screen(553px) {
+            font-size: 15px;
+            padding-bottom: 8px;
+        }
+    }
+
+    p {
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #C0C0C0;
+        padding-bottom: 22px;
+
+        @include max-screen(849px) {
+            font-size: 15px;
+        }
+
+        @include max-screen(553px) {
+            font-size: 10px;
+            padding-bottom: 11px;
+        }
+    }
+}
+
+.container-need {
+    max-width: 600px;
+    margin: auto;
+    padding: 113px 0px 108px;
+
+    @include max-screen(553px) {
+        padding: 60px 0px 50px;
+    }
+}
+
+.get {
+    padding: 5px 10px 5px 4px;
+    border-radius: 14px;
+    background: #FFFFFF;
+    text-decoration: none;
+    color: $main_color;
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    display: inline-flex;
+    align-items: center;
+
+    @include max-screen(849px) {
+        font-size: 12px;
+    }
+
+    @include max-screen(553px) {
+        font-size: 10px;
+    }
+
+    @include max-screen(431px) {
+        font-size: 8px;
+    }
+
+    &:before {
+        content: "";
+        display: inline-block;
+        background-color: $main_color;
+        width: 32px;
+        height: 32px;
+        margin-right: 7px;
+        border-radius: 45%;
+    }
+}

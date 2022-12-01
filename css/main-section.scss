@@ -1,0 +1,87 @@
+.main-section {
+    background-image: url('../img/bg_main.jpg');
+    background-size: cover;
+    height: calc(100vh - 83px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 71px;
+    position: relative;
+
+    @include max-screen(553px) {
+        height: calc(75vh - 83px);
+    }
+
+    @include max-screen(320px) {
+        height: calc(90vh - 40px);
+    }
+}
+
+.main-container {
+    max-width: 580px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.subtitle {
+    padding-bottom: 1px;
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+
+    @include max-screen(849px) {
+        font-size: 10px;
+    }
+
+    @include max-screen(431px) {
+        font-size: 8px;
+    }
+}
+
+h1 {
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 59px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 18px;
+
+    @include max-screen(849px) {
+        font-size: 35px;
+    }
+
+    @include max-screen(553px) {
+        padding-bottom: 5px;
+    }
+
+    @include max-screen(431px) {
+        font-size: 25px;
+    }
+}
+
+.main-p {
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #C0C0C0;
+
+    @include max-screen(849px) {
+        font-size: 9px;
+        margin: 0px 5px;
+    }
+
+    @include max-screen(553px) {
+        font-size: 7px;
+    }
+}

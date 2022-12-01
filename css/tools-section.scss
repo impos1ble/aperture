@@ -1,0 +1,104 @@
+.tools {
+    background-color: $main_color;
+    min-height: 540px;
+    position: relative;
+
+    @include max-screen(849px) {
+        padding-bottom: 10px;
+    }
+
+    .right-tools {
+        width: 50%;
+        min-height: 540px;
+        right: 0;
+        top: 0;
+        background-image: url("../img/foto-camera.jpg");
+        background-size: cover;
+        position: absolute;
+
+        @include max-screen(849px) {
+            position: relative;
+            width: 100%;
+        }
+
+        @include max-screen(553px) {
+            min-height: 400px;
+        }
+    }
+
+    .left-tools {
+        max-width: 514px;
+
+        h4 {
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #C0C0C0;
+            margin-bottom: 6px;
+
+            @include max-screen(849px) {
+                font-size: 12px;
+            }
+
+            @include max-screen(553px) {
+                font-size: 10px;
+            }
+        }
+
+        h3 {
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 32px;
+            color: #FFFFFF;
+            margin-bottom: 14px;
+
+            @include max-screen(849px) {
+                font-size: 20px;
+            }
+
+            @include max-screen(553px) {
+                font-size: 15px;
+            }
+        }
+
+        p {
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+
+            @include max-screen(849px) {
+                font-size: 12px;
+            }
+
+            @include max-screen(553px) {
+                font-size: 10px;
+            }
+        }
+
+        @include max-screen(1015px) {
+            max-width: 400px;
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        min-height: 540px;
+        max-width: 1200px;
+        margin: auto;
+
+        @include max-screen(1215px) {
+            margin: 0px 10px;
+        }
+    }
+}
