@@ -1,0 +1,96 @@
+.main-section {
+  background-image: url("../img/bg_main.jpg");
+  background-size: cover;
+  height: calc(100vh - 83px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 71px;
+  position: relative;
+}
+@media screen and (max-width: 553px) {
+  .main-section {
+    height: calc(75vh - 83px);
+  }
+}
+@media screen and (max-width: 320px) {
+  .main-section {
+    height: calc(90vh - 40px);
+  }
+}
+
+.main-container {
+  max-width: 580px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.subtitle {
+  padding-bottom: 1px;
+  font-family: "poppinsregular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #C0C0C0;
+}
+@media screen and (max-width: 849px) {
+  .subtitle {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 431px) {
+  .subtitle {
+    font-size: 8px;
+  }
+}
+
+h1 {
+  font-family: "poppinsregular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 59px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-bottom: 18px;
+}
+@media screen and (max-width: 849px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 553px) {
+  h1 {
+    padding-bottom: 5px;
+  }
+}
+@media screen and (max-width: 431px) {
+  h1 {
+    font-size: 25px;
+  }
+}
+
+.main-p {
+  font-family: "poppinsregular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #C0C0C0;
+}
+@media screen and (max-width: 849px) {
+  .main-p {
+    font-size: 9px;
+    margin: 0px 5px;
+  }
+}
+@media screen and (max-width: 553px) {
+  .main-p {
+    font-size: 7px;
+  }
+}

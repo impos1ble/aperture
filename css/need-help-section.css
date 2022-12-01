@@ -1,0 +1,99 @@
+.need-help {
+  background: #000000;
+  display: flex;
+  margin: auto;
+  text-align: center;
+}
+.need-help h3 {
+  font-family: "poppinsregular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 42px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-bottom: 15px;
+}
+@media screen and (max-width: 849px) {
+  .need-help h3 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 553px) {
+  .need-help h3 {
+    font-size: 15px;
+    padding-bottom: 8px;
+  }
+}
+.need-help p {
+  font-family: "poppinsregular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #C0C0C0;
+  padding-bottom: 22px;
+}
+@media screen and (max-width: 849px) {
+  .need-help p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 553px) {
+  .need-help p {
+    font-size: 10px;
+    padding-bottom: 11px;
+  }
+}
+
+.container-need {
+  max-width: 600px;
+  margin: auto;
+  padding: 113px 0px 108px;
+}
+@media screen and (max-width: 553px) {
+  .container-need {
+    padding: 60px 0px 50px;
+  }
+}
+
+.get {
+  padding: 5px 10px 5px 4px;
+  border-radius: 14px;
+  background: #FFFFFF;
+  text-decoration: none;
+  color: #000000;
+  font-family: "poppinsregular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  display: inline-flex;
+  align-items: center;
+}
+@media screen and (max-width: 849px) {
+  .get {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 553px) {
+  .get {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 431px) {
+  .get {
+    font-size: 8px;
+  }
+}
+.get:before {
+  content: "";
+  display: inline-block;
+  background-color: #000000;
+  width: 32px;
+  height: 32px;
+  margin-right: 7px;
+  border-radius: 45%;
+}

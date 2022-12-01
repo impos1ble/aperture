@@ -1,0 +1,9 @@
+.footer {
+  background-color: #000000;
+}
+
+.footer-container {
+  max-width: 1168px;
+  margin: auto;
+  padding: 100px 0;
+}

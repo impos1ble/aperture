@@ -1,3 +1,12 @@
+$main_font: 'poppinsregular';
+$main_color: #000000;
+
+@mixin max-screen($res) {
+    @media screen and (max-width: $res) {
+        @content;
+    }
+}
+
 .what-we-do {
     background-color: $main_color;
     padding: 112px 0 100px;

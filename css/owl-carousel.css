@@ -1,0 +1,94 @@
+.owl-stage {
+  display: flex;
+  align-items: center;
+}
+
+.owl-item {
+  text-align: center;
+}
+
+.owl-nav .owl-prev:before {
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  content: "\f053";
+  display: inline-block;
+  font-size: 40px;
+  color: #FFFFFF;
+  position: absolute;
+  left: -20px;
+  top: 10px;
+}
+@media screen and (max-width: 1040px) {
+  .owl-nav .owl-prev:before {
+    left: -10px;
+  }
+}
+@media screen and (max-width: 1015px) {
+  .owl-nav .owl-prev:before {
+    left: 0;
+  }
+}
+@media screen and (max-width: 849px) {
+  .owl-nav .owl-prev:before {
+    display: none;
+  }
+}
+.owl-nav .owl-next:before {
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  content: "\f054";
+  display: inline-block;
+  font-size: 40px;
+  color: #FFFFFF;
+  position: absolute;
+  right: -20px;
+  top: 10px;
+}
+@media screen and (max-width: 1040px) {
+  .owl-nav .owl-next:before {
+    right: -10px;
+  }
+}
+@media screen and (max-width: 1015px) {
+  .owl-nav .owl-next:before {
+    right: 0;
+  }
+}
+@media screen and (max-width: 849px) {
+  .owl-nav .owl-next:before {
+    display: none;
+  }
+}
+
+.owl-nav .owl-prev:hover::before,
+.owl-nav .owl-next:hover::before {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.owl-dots {
+  text-align: center;
+}
+.owl-dots .owl-dot span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+@media screen and (max-width: 849px) {
+  .owl-dots .owl-dot span {
+    width: 7px;
+    height: 7px;
+  }
+}
+@media screen and (max-width: 553px) {
+  .owl-dots .owl-dot span {
+    width: 5px;
+    height: 5px;
+  }
+}
+
+.owl-dots .owl-dot.active span {
+  background-color: rgba(255, 255, 255, 0.4);
+}

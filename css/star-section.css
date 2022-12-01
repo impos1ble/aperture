@@ -1,0 +1,53 @@
+.star {
+  background-image: url(../img/bg-star.jpg);
+  background-size: cover;
+  min-height: 600px;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+@media screen and (max-width: 553px) {
+  .star {
+    min-height: 400px;
+  }
+}
+.star .sub-container {
+  max-width: 254px;
+  margin-right: 106px;
+}
+@media screen and (max-width: 553px) {
+  .star .sub-container {
+    margin-right: 30px;
+    margin: auto;
+    text-align: center;
+  }
+}
+.star .sub-container h4 {
+  font-family: "poppinsregular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 553px) {
+  .star .sub-container h4 {
+    font-size: 10px;
+  }
+}
+.star .sub-container p {
+  font-family: "poppinsregular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #C0C0C0;
+}
+@media screen and (max-width: 553px) {
+  .star .sub-container p {
+    font-size: 10px;
+  }
+}
