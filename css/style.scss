@@ -10,21 +10,9 @@
     font-style: normal;
 }
 
-@import "header.css";
-@import "main-section.css";
-@import "location.css";
-@import "what-we-do-section.css";
-@import "sunset-section.css";
-@import "tools-section.css";
-@import "monstera-section.css";
-@import "clients-section.css";
-@import "star-section.css";
-@import "need-help-section.css";
-@import "owl-carousel.css";
-@import "accordion.css";
-@import "mobile-menu.css";
+@import "header.scss";
 @import "burger-menu-mobile.css";
-@import "footer.css";
+@import "footer.scss";
 
 
 $main_font: 'poppinsregular';
@@ -36,20 +24,1219 @@ $main_color: #000000;
     }
 }
 
+// --------------------------- main-section ------------------------ /
+.main-section {
+    background-image: url('../img/bg_main.jpg');
+    background-size: cover;
+    height: calc(100vh - 83px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 71px;
+    position: relative;
 
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
+    @include max-screen(553px) {
+        height: calc(75vh - 83px);
+    }
+
+    @include max-screen(320px) {
+        height: calc(90vh - 40px);
+    }
+}
+
+.main-container {
+    max-width: 580px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.subtitle {
+    padding-bottom: 1px;
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+
+    @include max-screen(849px) {
+        font-size: 10px;
+    }
+
+    @include max-screen(431px) {
+        font-size: 8px;
+    }
+}
+
+h1 {
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 59px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 18px;
+
+    @include max-screen(849px) {
+        font-size: 35px;
+    }
+
+    @include max-screen(553px) {
+        padding-bottom: 5px;
+    }
+
+    @include max-screen(431px) {
+        font-size: 25px;
+    }
+}
+
+.main-p {
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #C0C0C0;
+
+    @include max-screen(849px) {
+        font-size: 9px;
+        margin: 0px 5px;
+    }
+
+    @include max-screen(553px) {
+        font-size: 7px;
+    }
+}
+
+// ----------------------------- location ----------------------------- /
+.fixed-location {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
     list-style: none;
+
+    @include max-screen(849px) {
+        right: 30px;
+        bottom: 30px;
+    }
+
+    @include max-screen(553px) {
+        right: 20px;
+        bottom: 20px;
+    }
+
+    li {
+        margin-left: 16px;
+        color: #FFFFFF;
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        display: flex;
+        align-items: center;
+
+        @include max-screen(849px) {
+            margin-left: 8px;
+            font-size: 8px;
+        }
+
+        &:before {
+            content: "";
+            display: inline-block;
+            background-image: url(../img/icon-1.svg);
+            width: 16px;
+            height: 16px;
+            margin-right: 6px;
+
+            @include max-screen(849px) {
+                margin-right: 3px;
+            }
+
+            @include max-screen(553px) {
+                height: 10px;
+                width: 10px;
+                background-size: cover;
+            }
+        }
+
+        &:nth-child(2) {
+            &:before {
+                background-image: url(../img/icon-2.svg);
+
+                @include max-screen(553px) {
+                    height: 10px;
+                    width: 10px;
+                    background-size: cover;
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            &:before {
+                background-image: url(../img/icon-3.svg);
+                width: 32px;
+
+                @include max-screen(553px) {
+                    height: 10px;
+                    width: 20px;
+                    background-size: cover;
+                }
+            }
+        }
+
+        &:nth-child(4) {
+            &:before {
+                background-image: url(../img/icon-4.svg);
+                width: 10px;
+
+                @include max-screen(553px) {
+                    height: 13px;
+                    width: 8px;
+                    background-size: cover;
+                }
+            }
+        }
+    }
 }
 
-body {
-    padding-top: 83px;
-    background-color: #181818;
+// ----------------------------- what-we-do-section ------------------------ /
+.what-we-do {
+    background-color: $main_color;
+    padding: 112px 0 100px;
+
+    @include max-screen(553px) {
+        padding: 40px 0 20px;
+    }
+
+    h3 {
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 42px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+
+        @include max-screen(849px) {
+            font-size: 25px;
+        }
+
+        @include max-screen(553px) {
+            font-size: 20px;
+        }
+    }
+
+    h4 {
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 30px;
+        text-align: center;
+        color: #C0C0C0;
+        margin-bottom: 42px;
+
+        @include max-screen(849px) {
+            font-size: 15px;
+        }
+
+        @include max-screen(553px) {
+            font-size: 12px;
+        }
+    }
+
+    article {
+        max-width: 576px;
+        position: relative;
+        margin-bottom: 16px;
+
+        @include max-screen(1170px) {
+            max-width: 550px;
+            padding: 0 10px;
+        }
+
+        @include max-screen(1110px) {
+            max-width: 500px;
+        }
+
+        @include max-screen(1015px) {
+            max-width: 450px;
+        }
+
+        @include max-screen(910px) {
+            min-width: 100%;
+        }
+
+        @include max-screen(553px) {
+            margin-bottom: 6px;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        .description {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            padding-right: 30px;
+
+            h4 {
+                font-family: $main_font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin-bottom: 15px;
+                text-align: left;
+
+                @include max-screen(849px) {
+                    font-size: 12px;
+                    line-height: 12px;
+                }
+
+                @include max-screen(553px) {
+                    font-size: 10px;
+                    line-height: 10px;
+                    margin-bottom: 7px;
+                }
+            }
+
+            p {
+                font-family: $main_font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #C0C0C0;
+                margin-bottom: 15px;
+
+                @include max-screen(849px) {
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+
+                @include max-screen(553px) {
+                    font-size: 10px;
+                    line-height: 12px;
+                    margin-bottom: 7px;
+                }
+            }
+        }
+    }
 }
 
-a {
+.what-container {
+    max-width: 1168px;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+// ----------------------------- sunset-section ------------------------ /
+
+.sunset {
+    background-image: url(../img/bg-sunset.jpg);
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    @include max-screen(553px) {
+        min-height: 400px;
+    }
+
+    .sub-container {
+        max-width: 298px;
+        margin-right: 62px;
+
+        @include max-screen(553px) {
+            margin-right: 30px;
+            margin: auto;
+            text-align: center;
+        }
+
+        h4 {
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
+            @include max-screen(553px) {
+                font-size: 10px;
+            }
+        }
+
+        p {
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #C0C0C0;
+
+            @include max-screen(553px) {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+// ----------------------------- tools-section ------------------------ /
+
+.tools {
+    background-color: $main_color;
+    min-height: 540px;
+    position: relative;
+
+    @include max-screen(849px) {
+        padding-bottom: 10px;
+    }
+
+    .right-tools {
+        width: 50%;
+        min-height: 540px;
+        right: 0;
+        top: 0;
+        background-image: url("../img/foto-camera.jpg");
+        background-size: cover;
+        position: absolute;
+
+        @include max-screen(849px) {
+            position: relative;
+            width: 100%;
+        }
+
+        @include max-screen(553px) {
+            min-height: 400px;
+        }
+    }
+
+    .left-tools {
+        max-width: 514px;
+
+        h4 {
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #C0C0C0;
+            margin-bottom: 6px;
+
+            @include max-screen(849px) {
+                font-size: 12px;
+            }
+
+            @include max-screen(553px) {
+                font-size: 10px;
+            }
+        }
+
+        h3 {
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 32px;
+            color: #FFFFFF;
+            margin-bottom: 14px;
+
+            @include max-screen(849px) {
+                font-size: 20px;
+            }
+
+            @include max-screen(553px) {
+                font-size: 15px;
+            }
+        }
+
+        p {
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+
+            @include max-screen(849px) {
+                font-size: 12px;
+            }
+
+            @include max-screen(553px) {
+                font-size: 10px;
+            }
+        }
+
+        @include max-screen(1015px) {
+            max-width: 400px;
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        min-height: 540px;
+        max-width: 1200px;
+        margin: auto;
+
+        @include max-screen(1215px) {
+            margin: 0px 10px;
+        }
+
+        @include max-screen(553px) {
+            min-height: 300px;
+        }
+    }
+}
+
+// ----------------------------- monstera-section ------------------------ /
+
+.monstera {
+    background-image: url(../img/bg-monstera.jpg);
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    @include max-screen(553px) {
+        min-height: 400px;
+    }
+
+    .sub-container {
+        max-width: 273px;
+        margin-right: 87px;
+
+        @include max-screen(553px) {
+            margin-right: 30px;
+            margin: auto;
+            text-align: center;
+        }
+
+        h4 {
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
+            @include max-screen(553px) {
+                font-size: 10px;
+            }
+        }
+
+        p {
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #C0C0C0;
+
+            @include max-screen(553px) {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+// ------------------------- clients-section -------------------------- /
+
+.clients {
+    background-color: $main_color;
+
+    h3 {
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 42px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+
+        @include max-screen(849px) {
+            font-size: 25px;
+        }
+
+        @include max-screen(553px) {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        @include max-screen(431px) {
+            font-size: 12px;
+            padding-bottom: 5px;
+            line-height: 21px;
+        }
+    }
+
+    p {
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #C0C0C0;
+        margin-bottom: 42px;
+
+        @include max-screen(849px) {
+            font-size: 15px;
+        }
+
+        @include max-screen(553px) {
+            font-size: 10px;
+            margin-bottom: 20px;
+        }
+
+        @include max-screen(431px) {
+            font-size: 8px;
+            padding-bottom: 6px;
+            line-height: 15px;
+        }
+    }
+
+    a {
+        max-width: 128px;
+        display: inline-block;
+
+        @include max-screen(849px) {
+            max-width: 90px;
+        }
+
+        @include max-screen(553px) {
+            max-width: 70px;
+        }
+
+        @include max-screen(431px) {
+            max-width: 100px;
+            margin-bottom: 30px;
+        }
+
+    }
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.clients-container {
+    max-width: 1168px;
+    margin: auto;
+    padding: 120px 0px 100px;
+
+    @include max-screen(431px) {
+        padding: 30px 0 20px;
+    }
+}
+
+.icons-clients {
+    margin: auto;
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-around;
+    align-items: center;
+
+    @include max-screen(431px) {
+        flex-direction: column;
+    }
+}
+
+// --------------------------- star-section ------------------------ /
+
+.star {
+    background-image: url(../img/bg-star.jpg);
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    @include max-screen(553px) {
+        min-height: 400px;
+    }
+
+    .sub-container {
+        max-width: 254px;
+        margin-right: 106px;
+
+        @include max-screen(553px) {
+            margin-right: 30px;
+            margin: auto;
+            text-align: center;
+        }
+
+        h4 {
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
+            @include max-screen(553px) {
+                font-size: 10px;
+            }
+        }
+
+        p {
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #C0C0C0;
+
+            @include max-screen(553px) {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+// --------------------------- need-help-section ------------------------ /
+
+.need-help {
+    background: $main_color;
+    display: flex;
+    margin: auto;
+    text-align: center;
+
+    h3 {
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 42px;
+        text-align: center;
+        color: #FFFFFF;
+        padding-bottom: 15px;
+
+        @include max-screen(849px) {
+            font-size: 25px;
+        }
+
+        @include max-screen(553px) {
+            font-size: 15px;
+            padding-bottom: 8px;
+        }
+    }
+
+    p {
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #C0C0C0;
+        padding-bottom: 22px;
+
+        @include max-screen(849px) {
+            font-size: 15px;
+        }
+
+        @include max-screen(553px) {
+            font-size: 10px;
+            padding-bottom: 11px;
+        }
+    }
+}
+
+.container-need {
+    max-width: 600px;
+    margin: auto;
+    padding: 113px 0px 108px;
+
+    @include max-screen(553px) {
+        padding: 60px 0px 50px;
+    }
+}
+
+.get {
+    padding: 5px 10px 5px 4px;
+    border-radius: 14px;
+    background: #FFFFFF;
     text-decoration: none;
+    color: $main_color;
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    display: inline-flex;
+    align-items: center;
+
+    @include max-screen(849px) {
+        font-size: 12px;
+    }
+
+    @include max-screen(553px) {
+        font-size: 10px;
+    }
+
+    @include max-screen(431px) {
+        font-size: 8px;
+    }
+
+    &:before {
+        content: "";
+        display: inline-block;
+        background-color: $main_color;
+        width: 32px;
+        height: 32px;
+        margin-right: 7px;
+        border-radius: 45%;
+    }
+}
+
+// --------------------------- owl-carousel ------------------------ /
+
+.owl-stage {
+    display: flex;
+    align-items: center;
+}
+
+.owl-item {
+    text-align: center;
+}
+
+.owl-nav {
+    .owl-prev {
+        &:before {
+            font-weight: 900;
+            font-family: "Font Awesome 6 Free";
+            content: "\f053";
+            display: inline-block;
+            font-size: 40px;
+            color: #FFFFFF;
+            position: absolute;
+            left: -20px;
+            top: 10px;
+
+            @include max-screen(1040px) {
+                left: -10px;
+            }
+
+            @include max-screen(1015px) {
+                left: 0;
+            }
+
+            @include max-screen(849px) {
+                display: none;
+            }
+        }
+    }
+
+    .owl-next {
+        &:before {
+            font-weight: 900;
+            font-family: "Font Awesome 6 Free";
+            content: "\f054";
+            display: inline-block;
+            font-size: 40px;
+            color: #FFFFFF;
+            position: absolute;
+            right: -20px;
+            top: 10px;
+
+            @include max-screen(1040px) {
+                right: -10px;
+            }
+
+            @include max-screen(1015px) {
+                right: 0;
+            }
+
+            @include max-screen(849px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.owl-nav .owl-prev:hover::before,
+.owl-nav .owl-next:hover::before {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.owl-dots {
+    text-align: center;
+
+    .owl-dot {
+        span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 5px;
+            background-color: #fff;
+            border-radius: 50%;
+
+            @include max-screen(849px) {
+                width: 7px;
+                height: 7px;
+            }
+
+            @include max-screen(553px) {
+                width: 5px;
+                height: 5px;
+            }
+        }
+    }
+}
+
+.owl-dots .owl-dot.active span {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+// --------------------------- accordion ------------------------ /
+
+.faq {
+    background-color: #181818;
+    padding: 70px 0;
+
+    .text {
+        max-width: 500px;
+        padding-right: 50px;
+
+        @include max-screen(849px) {
+            padding-right: 30px;
+        }
+
+        @include max-screen(553px) {
+            padding-right: 15px;
+        }
+
+        @include max-screen(431px) {
+            padding-right: 5px;
+        }
+
+        h3 {
+            font-family: $main_font;
+            font-size: 41px;
+            font-weight: 400;
+            line-height: 50px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #C0C0C0;
+            margin-bottom: 50px;
+
+            @include max-screen(849px) {
+                font-size: 30px;
+                line-height: 30px;
+            }
+
+            @include max-screen(553px) {
+                font-size: 25px;
+                line-height: 25px;
+            }
+
+            @include max-screen(431px) {
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }
+
+        p {
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 12px;
+            color: #FFFFFF;
+
+            @include max-screen(553px) {
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    .accordion {
+        max-width: 700px;
+    }
+
+    .ui-accordion {
+        .ui-accordion-header {
+            background: #FFFFFF;
+            border: 1px solid #E3E8EF;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            padding: 23px 25px;
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color: #202939;
+            margin-bottom: 16px;
+        }
+
+        .ui-accordion-header.ui-state-active {
+            margin-bottom: 0px;
+            border-radius: 8px 8px 0 0;
+
+            .ui-icon {
+                &:before {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+
+        .ui-accordion-content {
+            margin-bottom: 16px;
+            border-radius: 0 0 8px 8px;
+            padding: 8px 8px;
+
+            .ui-accordion-content-active {
+                height: auto;
+            }
+        }
+
+        .ui-icon {
+            background-image: none;
+            background-position: 0;
+            width: 32px;
+            height: 48px;
+            text-indent: 0px;
+            position: absolute;
+            right: 25px;
+            top: 26px;
+
+            @include max-screen(320px) {
+                width: 25px;
+                height: 35px;
+                right: 10px;
+                top: 26px;
+            }
+
+            &:before {
+                font-weight: 900;
+                font-family: "Font Awesome 6 Free";
+                content: "\2b";
+                font-size: 32px;
+                display: inline-block;
+                transition: 0.5s;
+
+                @include max-screen(320px) {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+.faq-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+
+    @include max-screen(1215px) {
+        margin: 0px 10px;
+    }
+
+    @include max-screen(849px) {
+        margin: 0px 5px;
+    }
+
+    @include max-screen(553px) {
+        margin: 5px 15px;
+        padding: 0 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    @include max-screen(431px) {
+        margin: 0px 5px;
+    }
+}
+
+// --------------------------- mobile-menu ------------------------ /
+
+.cd-header {
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    transition: transform 0.5s;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.cd-header.nav-is-visible {
+    -webkit-transform: translateY(80px);
+    -moz-transform: translateY(80px);
+    -ms-transform: translateY(80px);
+    -o-transform: translateY(80px);
+    transform: translateY(80px);
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-header.nav-is-visible {
+        -webkit-transform: translateY(170px);
+        -moz-transform: translateY(170px);
+        -ms-transform: translateY(170px);
+        -o-transform: translateY(170px);
+        transform: translateY(170px);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-3d-nav a {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        /* truncate text with ellipsis if too long */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &:before {
+            top: 4.4em;
+            left: 50%;
+            right: auto;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.cd-3d-nav-trigger {
+    position: relative;
+    float: right;
+    height: 45px;
+    width: 45px;
+    /* replace text with background image */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    color: transparent;
+    display: none;
+
+    @include max-screen(553px) {
+        display: inline-block;
+    }
+}
+
+.cd-marker {
+    /* line at the bottom of nav selected item */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 20%;
+    background-color: currentColor;
+    -webkit-transform-origin: center bottom;
+    -moz-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    -o-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-transform: translateZ(0) rotateX(90deg);
+    -moz-transform: translateZ(0) rotateX(90deg);
+    -ms-transform: translateZ(0) rotateX(90deg);
+    -o-transform: translateZ(0) rotateX(90deg);
+    transform: translateZ(0) rotateX(90deg);
+    -webkit-transition: -webkit-transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s;
+    -moz-transition: -moz-transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s;
+    transition: transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s;
+
+    &:before {
+        /* triangle at the bottom of nav selected item */
+        content: '';
+        position: absolute;
+        bottom: 3px;
+        left: 50%;
+        right: auto;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        height: 0;
+        width: 0;
+        border: 10px solid transparent;
+        border-bottom-color: inherit;
+    }
+}
+
+.nav-is-visible .cd-marker {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+/* these are the colors of the markers - line + arrow */
+.color-1 {
+    color: #9a57bd;
+}
+
+.color-2 {
+    color: #c96aa4;
+}
+
+.color-3 {
+    color: #d6915e;
+}
+
+.color-4 {
+    color: #5397c7;
+}
+
+.color-5 {
+    color: #77cd91;
 }
