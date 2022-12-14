@@ -12,7 +12,6 @@
 
 @import "header.scss";
 @import "burger-menu-mobile.css";
-@import "footer.scss";
 
 
 $main_font: 'poppinsregular';
@@ -850,7 +849,7 @@ h1 {
             content: "\f053";
             display: inline-block;
             font-size: 40px;
-            color: #FFFFFF;
+            color: white;
             position: absolute;
             left: -20px;
             top: 10px;
@@ -876,7 +875,7 @@ h1 {
             content: "\f054";
             display: inline-block;
             font-size: 40px;
-            color: #FFFFFF;
+            color: white;
             position: absolute;
             right: -20px;
             top: 10px;
@@ -1089,6 +1088,268 @@ h1 {
 
     @include max-screen(431px) {
         margin: 0px 5px;
+    }
+}
+
+
+footer {
+    padding: 100px 0 100px;
+    background-color: $main_color;
+
+    .footer-container {
+        @include max-screen(1215px) {
+            margin: 0px 10px;
+        }
+
+        @include max-screen(726px) {
+            flex-wrap: wrap;
+        }
+
+
+        display: flex;
+        justify-content: space-between;
+        max-width: 1168px;
+        margin: auto;
+        position: relative;
+        padding: 100px 0;
+
+        &::after {
+            content: "";
+            background: #FFFFFF;
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            bottom: 15%;
+        }
+
+        .f-flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo-f {
+
+            p {
+                font-family: $main_font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 20px;
+                color: #C0C0C0;
+                margin: 20px 10px 30px 0;
+
+                @include max-screen(850px) {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+
+        .business {
+
+            a {
+                font-family: $main_font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #FFFFFF;
+
+                @include max-screen(850px) {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+
+                li {
+                    margin-bottom: 10px;
+                    margin-right: 10px;
+                }
+
+                &:first-of-type {
+                    font-family: $main_font;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: #C0C0C0;
+
+                    @include max-screen(850px) {
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+
+        .pages {
+            a {
+                font-family: $main_font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #FFFFFF;
+
+                @include max-screen(850px) {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+
+                li {
+                    margin-bottom: 10px;
+                }
+
+                &:first-of-type {
+                    font-family: $main_font;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: #C0C0C0;
+
+                    @include max-screen(850px) {
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-container2 {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1168px;
+        margin: auto;
+        position: relative;
+
+        @include max-screen(1215px) {
+            margin: 0px 10px;
+        }
+
+        @include max-screen(726px) {
+            flex-direction: column;
+        }
+
+        &::after {
+            content: "";
+            background: #FFFFFF;
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            top: 100px;
+
+            @include max-screen(726px) {
+                top: 160px;
+            }
+        }
+
+        form {
+            background: #F9FAFB;
+            border: 1px solid #E5E7EB;
+            border-radius: 12px;
+            width: 458px;
+            height: 52px;
+            position: relative;
+
+            @include max-screen(726px) {
+                width: 100%;
+            }
+
+            .inp-footer {
+                position: absolute;
+                top: 10%;
+                left: 2%;
+                border: none;
+                width: 370px;
+                height: 38px;
+                padding: 0 5px;
+
+                @include max-screen(726px) {
+                    width: 75%;
+                }
+            }
+
+            button {
+                background: #000000;
+                border-radius: 11px;
+                width: 63px;
+                height: 30px;
+                position: absolute;
+                top: 11px;
+                right: 6px;
+            }
+        }
+
+        h4 {
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+
+            @include max-screen(850px) {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+
+        p {
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 20px;
+            color: #C0C0C0;
+            margin-bottom: 10px;
+
+            @include max-screen(850px) {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .footer-container3 {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1168px;
+        margin: auto;
+        padding-top: 100px;
+
+        @include max-screen(1215px) {
+            margin: 0px 10px;
+        }
+
+        p {
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #C0C0C0;
+
+            @include max-screen(850px) {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+
+        ul {
+            display: flex;
+
+            li {
+                margin-left: 20px;
+            }
+        }
     }
 }
 
